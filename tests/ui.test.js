@@ -185,6 +185,6 @@ test('Verify redirection of Logout link after user login', async ({ page }) => {
   const logoutLink = await page.$('a[href="javascript:void(0)"]');
   await logoutLink.click();
 
-  const redirectedURL = page.url();
+  const redirectedURL = page.url('http://localhost:3000/catalog');
   expect(redirectedURL).toBe('http://localhost:3000/catalog');
 });

@@ -24,7 +24,7 @@ jobs:
     - name: Start backend
       run: npm run start:be &
     - name: Start forntend
-      run: npm run start-fe &
+      run: npm run start:fe &
     - name: Install Playwright browsers
       run: npx playwright install 
     - name: Execute UI tests
